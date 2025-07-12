@@ -1,6 +1,7 @@
 import { cn } from "@/lib/utils";
 import React, { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
+import { ThemeToggle } from "./ThemeToggle";
 
 
 const navItems = [
@@ -48,10 +49,24 @@ export const Navbar = () => {
 
       {/* mobileversion */}
 
-      <button onClick={() => setIsMenuOpen((prev) => !prev)} className="md:hidden p-2 text-foreground z-50"
+      {/* <button onClick={() => setIsMenuOpen((prev) => !prev)} className="md:hidden p-2 text-foreground z-50"
       aria-label={isMenuOpen ? "Close menu" : "Open menu"}
       >
-      {isMenuOpen ? <X size={24}/> : <Menu size={24}/>}</button>
+      {isMenuOpen ? <X size={24}/> : <Menu size={24}/>}
+      </button> */}
+
+      {/* Theme toggle + Hamburger side-by-side */}
+      <div className="flex items-center gap-2 md:hidden">
+        <ThemeToggle />
+        <button
+          onClick={() => setIsMenuOpen((prev) => !prev)}
+          className="p-2 text-foreground z-50"
+          aria-label={isMenuOpen ? "Close menu" : "Open menu"}
+        >
+          {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
+        </button>
+      </div>
+
 
       <div className={cn("fixed inset-0 bg-background/95 backdrop-blur-md z-40 flex flex-col items-center justify-center",
         "transition-all duration-300 md:hidden",
@@ -69,8 +84,6 @@ export const Navbar = () => {
             </a>
           ))}
         </div>
-        
-
       </div>
     </div>
   </nav>
