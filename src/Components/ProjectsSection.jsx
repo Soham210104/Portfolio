@@ -8,7 +8,7 @@ const projects = [
     description: "This is a movie discovery web application that allows users to search for movies, view details, and save their favorites.",
     image: "/projects/moviehunt.png",
     tags: ["HTML", "CSS", "JavaScript", "API", "React", "Tailwind CSS","Appwrite"],
-    githubUrl: "#"
+    githubUrl: "https://github.com/Soham210104/MovieHunt"
   },
   {
     id: 2,
