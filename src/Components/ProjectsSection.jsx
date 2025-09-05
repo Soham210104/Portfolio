@@ -4,6 +4,14 @@ import { ArrowRight } from "lucide-react";
 const projects = [
   {
     id: 1,
+    title: "ASUS Driver Helper Tool",
+    description: "A C# tool that detects Wi-Fi/Bluetooth drivers, compares installed vs latest versions, and provides one-click download links for easy updates.",
+    image: "/projects/asusdriver.png",
+    tags: ["C#", "WinForms", "PowerShell", "JSON", "Automation", "Driver Management"],
+    githubUrl: "https://github.com/Soham210104/ASUSDriverHelper"
+  },
+  {
+    id: 2,
     title: "MovieHunt",
     description: "This is a movie discovery web application that allows users to search for movies, view details, and save their favorites.",
     image: "/projects/moviehunt.png",
@@ -11,7 +19,7 @@ const projects = [
     githubUrl: "https://github.com/Soham210104/MovieHunt"
   },
   {
-    id: 2,
+    id: 3,
     title: "SmartMeasurer",
     description: "This is an augmented reality mobile application that allows users to measure real-world objects using their smartphone camera.",
     image: "/projects/AR.jpg",
@@ -20,7 +28,7 @@ const projects = [
     // Future add the demoUrl 
   },
   {
-    id: 3,
+    id: 4,
     title: "Interactive Item Management System",
     description: "Developed this full stack Game in a team of 3,during hackathon,where my contribution was of Game Logic and Backend.",
     image: "/projects/test1.png",
