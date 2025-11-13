@@ -3,6 +3,15 @@ import { ArrowRight } from "lucide-react";
 
 const projects = [
   {
+    id: 0,
+    title: "JotBoard – Notes App",
+    description: "A full-stack notes application with complete CRUD features, clean UI, rate limiting, and a MERN architecture.",
+    image: "/projects/Website.png",
+    tags: ["MERN", "React", "Express", "MongoDB", "Tailwind", "Redis"],
+    githubUrl: "https://github.com/Soham210104/JotBoard",
+    demoUrl: "https://jotboard-gv7j.onrender.com/"
+  },
+  {
     id: 1,
     title: "ASUS Driver Helper Tool",
     description: "A C# tool that detects Wi-Fi/Bluetooth drivers, compares installed vs latest versions, and provides one-click download links for easy updates.",
@@ -30,12 +39,12 @@ const projects = [
   {
     id: 4,
     title: "Interactive Item Management System",
-    description: "Developed this full stack Game in a team of 3,during hackathon,where my contribution was of Game Logic and Backend.",
+    description: "Developed this full stack Game in a team of 3, during hackathon, where my contribution was of Game Logic and Backend.",
     image: "/projects/test1.png",
     tags: ["C#", "OOP", "Unity", "DSA", "Algorithms", "Game Development"],
     githubUrl: "https://github.com/Soham210104/GameJam"
   },
-]
+];
 
 
 export const ProjectsSection = () => {
@@ -63,25 +72,39 @@ export const ProjectsSection = () => {
                 ))}
               </div>
 
-
               <h3 className="text-xl font-semibold mb-1">{project.title}</h3>
               <p className="text-muted-foreground text-sm mb-4">{project.description}</p>
+
               <div className="flex justify-between items-center">
-                <div>
+                <div className="flex gap-3 items-center">
                   <a href={project.githubUrl} target="_blank" rel="noopener noreferrer" className="text-foreground/80 hover:text-primary transition-colors duration-300">
                     <Github size={20} />
                   </a>
+
+                  {/* Show Live Demo ONLY if available */}
+                  {project.demoUrl && (
+                    <a 
+                      href={project.demoUrl} 
+                      target="_blank" 
+                      rel="noopener noreferrer" 
+                      className="text-sm text-primary underline hover:opacity-80"
+                    >
+                      Live Demo
+                    </a>
+                  )}
                 </div>
               </div>
+
             </div>
           </div>
         ))}
       </div>
+
       <div className="text-center mt-12">
         <a className="cosmic-button w-fit flex items-center mx-auto gap-2" href="https://github.com/Soham210104" target="_blank" rel="noopener noreferrer">
           Check My GitHub<ArrowRight size={16} />
         </a>
       </div>
     </div>
-  </section>
+  </section>;
 }
