@@ -5,7 +5,7 @@ const workExperiences = [
   {
     role: "Software Developer Intern",
     company: "VSQUARE",
-    duration: "Feb 2024 - April 2024",
+    duration: "Feb 2024 - Aug 2024",
     description: (
       <ul className="list-disc list-inside space-y-1 text-muted-foreground">
         <li>Improved login system security using regex validation and fixed critical bugs, reducing unauthorized access by 40%.</li>
@@ -41,7 +41,7 @@ export const WorkExperienceSection = () => {
                 </div>
               </div>
               <a
-                href="/documents/WorkExperience_Letter.pdf"
+                href="/documents/ExperienceLetterSoftwareAug.pdf"
                 download
                 className="inline-block mt-4 px-6 py-2 rounded-full border border-primary text-primary hover:bg-primary/10 transition-colors duration-300"
               >
