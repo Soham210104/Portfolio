@@ -13,7 +13,8 @@ export const AboutSection = () => {
           <div className="space-y-6">
             <h3 className="text-2xl font-semibold">Tech Developer</h3>
 
-            <p className="text-muted-foreground">Computer Engineering student with hands-on experience in software development and robust backend systems,
+            <p className="text-muted-foreground"> I am Computer Engineering Graduate from Pimpri Chinchwad College of Engineering,Pune
+               with hands-on experience in software development and robust backend systems,
               adept at writing high-quality, maintainable code with a focus on security and design. Proficient in C++, C#,
               Java, and Python, with a strong foundation in Data Structures and Algorithms (DSA) and Object-Oriented
               Programming (OOP). Experienced in contributing to all phases of software development, building full-stack
