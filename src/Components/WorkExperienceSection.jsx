@@ -8,11 +8,12 @@ const workExperiences = [
     duration: "Feb 2024 - Aug 2024",
     description: (
       <ul className="list-disc list-inside space-y-1 text-muted-foreground">
-        <li>Improved login system security using regex validation and fixed critical bugs, reducing unauthorized access by 40%.</li>
-        <li>Built a communication bridge between C# and Python, making cross-platform features work smoothly and improving user engagement by 25%.</li>
-        <li>Developed and optimized backend services on Microsoft Azure, reducing API load and storage usage through smart data handling and caching.</li>
-        <li>Followed the full software development process from planning to deployment, ensuring reliable and maintainable code delivery.</li>
-        <li>Worked with cross-functional teams in Agile sprints to meet development goals on time.</li>
+        <li>Developed and maintained software components across the SDLC in an Agile environment.</li>
+        <li>Enhanced authentication security using regex validation and resolved software bugs.</li>
+        <li>Built a C#–Python integration bridge to enable cross-platform solutions.</li>
+        <li>Conducted debugging and troubleshooting to ensure application reliability</li>
+        <li>Used REST APIs and Postman for backend integration and testing.</li>
+        <li>Collaborated with cross-functional teams to deliver features meeting business requirements.</li>
       </ul>
     )
   },
