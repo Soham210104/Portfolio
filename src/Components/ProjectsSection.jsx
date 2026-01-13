@@ -42,7 +42,8 @@ const projects = [
     description: "Developed this full stack Game in a team of 3, during hackathon, where my contribution was of Game Logic and Backend.",
     image: "/projects/test1.png",
     tags: ["C#", "OOP", "Unity", "DSA", "Algorithms", "Game Development"],
-    githubUrl: "https://github.com/Soham210104/GameJam"
+    githubUrl: "https://github.com/Soham210104/GameJam",
+    demoUrl: "https://itch.io/jam/festive-jam-2023/rate/2438553"
   },
 ];
 
