@@ -9,7 +9,7 @@ const projects = [
     image: "/projects/Website.png",
     tags: ["MERN", "React", "Express", "MongoDB", "Tailwind", "Redis"],
     githubUrl: "https://github.com/Soham210104/JotBoard",
-    demoUrl: "https://jotboard-gv7j.onrender.com/"
+    demoUrl: "https://jot-board.vercel.app/"
   },
   {
     id: 1,
