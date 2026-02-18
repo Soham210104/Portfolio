@@ -21,9 +21,8 @@ export const HeroSection = () => {
         </h1>
 
         <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto opacity-0 animate-fade-in-delay-2">
-          I am a Computer Engineering Graduate from Pimpri Chinchwad College of Engineering,Pune with hands-on experience in software development and backend systems.
-          Proficient in C++, C#,Java,Python with a strong foundation in Data Structures and Algorithms (DSA) and
-          Object-Oriented Programming (OOP).
+          I am Computer Engineering graduate from Pimpri Chinchwad College of Engineering, Pune, currently 
+          an Associate Software Engineer at Accenture. Proficient in C++, C#, Java, and Python with solid DSA and OOP fundamentals.
         </p>
 
 

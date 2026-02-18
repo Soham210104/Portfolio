@@ -30,8 +30,6 @@ const workExperiences = [
   },
 ];
 
-
-
 export const WorkExperienceSection = () => {
   return (
     <section id="experience" className="py-24 px-4 relative bg-secondary/30">
@@ -43,29 +41,40 @@ export const WorkExperienceSection = () => {
         <div className="grid grid-cols-1 gap-8">
           {workExperiences.map((exp, key) => (
             <div key={key} className="gradient-border p-6 card-hover">
+              
               <div className="flex items-start gap-4">
                 <div className="p-3 rounded-full bg-primary/10">
                   <Briefcase className="h-6 w-6 text-primary" />
                 </div>
+
                 <div className="text-left">
-                  <h4 className="font-semibold text-lg">{exp.role} @ {exp.company}</h4>
-                  <p className="text-sm text-muted-foreground">{exp.duration}</p>
-                  <p className="mt-2 text-muted-foreground">{exp.description}</p>
+                  <h4 className="font-semibold text-lg">
+                    {exp.role} @ {exp.company}
+                  </h4>
+                  <p className="text-sm text-muted-foreground">
+                    {exp.duration}
+                  </p>
+                  <div className="mt-2 text-muted-foreground">
+                    {exp.description}
+                  </div>
                 </div>
               </div>
-              <a
-                href="/documents/ExperienceLetterSoftwareAug.pdf"
-                download
-                className="inline-block mt-4 px-6 py-2 rounded-full border border-primary text-primary hover:bg-primary/10 transition-colors duration-300"
-              >
-                Download Letter of Intent
-              </a>
+
+              {/* ✅ Show button ONLY for VSQUARE */}
+              {exp.company === "VSQUARE" && (
+                <a
+                  href="/documents/ExperienceLetterSoftwareAug.pdf"
+                  download
+                  className="inline-block mt-4 px-6 py-2 rounded-full border border-primary text-primary hover:bg-primary/10 transition-colors duration-300"
+                >
+                  Download Letter of Intent
+                </a>
+              )}
 
             </div>
           ))}
         </div>
       </div>
-
     </section>
   );
 };
