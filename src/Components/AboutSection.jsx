@@ -13,12 +13,10 @@ export const AboutSection = () => {
           <div className="space-y-6">
             <h3 className="text-2xl font-semibold">Tech Developer</h3>
 
-            <p className="text-muted-foreground"> I am Computer Engineering Graduate from Pimpri Chinchwad College of Engineering,Pune
-               with hands-on experience in software development and robust backend systems,
-              adept at writing high-quality, maintainable code with a focus on security and design. Proficient in C++, C#,
-              Java, and Python, with a strong foundation in Data Structures and Algorithms (DSA) and Object-Oriented
-              Programming (OOP). Experienced in contributing to all phases of software development, building full-stack
-              features, integrating APIs, and deploying solutions using Microsoft Azure.
+            <p className="text-muted-foreground"> I am Computer Engineering graduate from Pimpri Chinchwad College of Engineering, 
+            Pune, currently serving as an Associate Software Engineer at Accenture. 
+            Skilled in software development and backend systems, with proficiency in C++, C#, Java, and Python. 
+            Strong understanding of Data Structures & Algorithms (DSA), Object-Oriented Programming (OOP), and problem-solving.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 pt-4 justify-center">
@@ -28,7 +26,7 @@ export const AboutSection = () => {
               </a>
 
               <a
-                href="/documents/SohamOvhal_Resume_Updated.pdf"
+                href="/documents/SohamOvhal_SoftwareDev.pdf"
                 download
                 className="px-6 py-2 rounded-full border border-primary  cosmic-button hover:bg-primary/10 transition-colors duration-300"
               >
