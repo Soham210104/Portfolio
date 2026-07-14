@@ -1,60 +1,45 @@
-import { useState } from "react";
-import { cn } from "@/lib/utils";
+import { ExternalLink } from "lucide-react";
 
 const certifications = [
   {
-    name: "AWS Certified Cloud Practitioner",
-    issuer: "Amazon Web Services",
-    date: "2024",
-    category: "cloud",
-    credentialId: "Credential ID",
+    name: "Claude Certified Architect - Foundations",
+    issuer: "Anthropic Certification",
+    image: "/certification/claude.png", // Update with your image path
+    credentialUrl: "https://verify.skilljar.com/c/33jk6x47hg5p", // Add credential link
   },
   {
-    name: "Google Cloud Associate Cloud Engineer",
-    issuer: "Google Cloud",
-    date: "2024",
-    category: "cloud",
-    credentialId: "Credential ID",
+    name: "Reinvention with Agentic AI",
+    issuer: "Accenture",
+    image: "/certification/reinvetion.png", // Update with your image path
+    credentialUrl: "", // Add credential link
   },
   {
-    name: "Docker Certified Associate",
-    issuer: "Docker",
-    date: "2023",
-    category: "devops",
-    credentialId: "Credential ID",
+    name: "Unity Certified Associate: Programmer",
+    issuer: "Unity",
+    image: "/certification/unity.png", // Update with your image path
+    credentialUrl: "https://www.credly.com/badges/82a001a7-d724-4be0-aa69-913f44deea1a/public_url", // Add credential link
   },
   {
-    name: "Kubernetes Application Developer (CKAD)",
-    issuer: "Linux Foundation",
-    date: "2023",
-    category: "devops",
-    credentialId: "Credential ID",
+    name: "Full Stack Web Development Bootcamp",
+    issuer: "Udemy",
+    image: "/certification/udemy.png", // Update with your image path
+    credentialUrl: "", // Add credential link
   },
   {
-    name: "Oracle Certified Associate Java Programmer",
-    issuer: "Oracle",
-    date: "2023",
-    category: "programming",
-    credentialId: "Credential ID",
+    name: "Aspire Leadership Program",
+    issuer: "Founded at Harvard University - Aspire Institute",
+    image: "/certification/aspire.png", // Update with your image path
+    credentialUrl: "", // Add credential link
   },
   {
-    name: "Microsoft Azure Fundamentals",
-    issuer: "Microsoft",
-    date: "2024",
-    category: "cloud",
-    credentialId: "Credential ID",
+    name: "Introduction to C++ and Unreal Engine",
+    issuer: "University of Colorado - Coursera",
+    image: "/certification/coursera.png", // Update with your image path
+    credentialUrl: "https://www.coursera.org/account/accomplishments/verify/SRHS4SWYL9TD", // Add credential link
   },
 ];
 
-const categories = ["all", "cloud", "devops", "programming"];
-
 export const CertificationSection = () => {
-  const [activeCategory, setActiveCategory] = useState("all");
-
-  const filteredCertifications = certifications.filter(
-    (cert) => activeCategory === "all" || cert.category === activeCategory
-  );
-
   return (
     <section id="certifications" className="py-24 px-4 relative bg-secondary/30">
       <div className="container mx-auto max-w-5xl">
@@ -62,47 +47,50 @@ export const CertificationSection = () => {
           My <span className="text-primary">Certifications</span>
         </h2>
 
-        <div className="flex flex-wrap justify-center gap-4 mb-12">
-          {categories.map((category, key) => (
-            <button
-              key={key}
-              onClick={() => setActiveCategory(category)}
-              className={cn(
-                "px-5 py-2 rounded-full transition-colors duration-300 capitalize",
-                activeCategory === category
-                  ? "bg-primary text-primary-foreground"
-                  : "bg-secondary/70 text-foreground hover:bg-secondary"
-              )}
-            >
-              {category}
-            </button>
-          ))}
-        </div>
-
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-          {filteredCertifications.map((cert, key) => (
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          {certifications.map((cert, key) => (
             <div
               key={key}
-              className="bg-card p-6 rounded-lg shadow-xs card-hover border border-secondary/50"
+              className="bg-card rounded-lg overflow-hidden shadow-xs card-hover border border-secondary/50 group"
             >
-              <div className="mb-4">
-                <h3 className="font-semibold text-lg mb-2">{cert.name}</h3>
-                <p className="text-sm text-primary font-medium">{cert.issuer}</p>
+              {/* Certificate Image */}
+              <div className="relative h-48 bg-secondary/50 overflow-hidden">
+                {cert.image && cert.image !== "" ? (
+                  <img
+                    src={cert.image}
+                    alt={cert.name}
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                  />
+                ) : (
+                  <div className="w-full h-full flex items-center justify-center bg-gradient-to-br from-primary/20 to-primary/5">
+                    <span className="text-muted-foreground text-center px-4">
+                      Certificate Image
+                    </span>
+                  </div>
+                )}
               </div>
 
-              <div className="flex items-center justify-between">
-                <span className="text-sm text-muted-foreground">
-                  {cert.date}
-                </span>
-                <span className="text-xs bg-primary/20 text-primary px-3 py-1 rounded-full capitalize">
-                  {cert.category}
-                </span>
-              </div>
-
-              <div className="mt-4 pt-4 border-t border-secondary/30">
-                <p className="text-xs text-muted-foreground">
-                  {cert.credentialId}
+              {/* Certificate Info */}
+              <div className="p-6">
+                <h3 className="font-semibold text-lg mb-2 line-clamp-2">
+                  {cert.name}
+                </h3>
+                <p className="text-sm text-primary font-medium mb-4">
+                  {cert.issuer}
                 </p>
+
+                {/* Credential Link */}
+                {cert.credentialUrl && (
+                  <a
+                    href={cert.credentialUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-2 text-sm text-primary hover:text-primary/80 transition-colors"
+                  >
+                    View Credential
+                    <ExternalLink className="h-4 w-4" />
+                  </a>
+                )}
               </div>
             </div>
           ))}
