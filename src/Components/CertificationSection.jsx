@@ -11,7 +11,7 @@ const certifications = [
     name: "Reinvention with Agentic AI",
     issuer: "Accenture",
     image: "/certification/reinvetion.png", // Update with your image path
-    credentialUrl: "", // Add credential link
+    credentialUrl: "https://www.linkedin.com/in/soham-ovhal-pccoe/details/certifications/", // Add credential link
   },
   {
     name: "Unity Certified Associate: Programmer",
@@ -23,13 +23,13 @@ const certifications = [
     name: "Full Stack Web Development Bootcamp",
     issuer: "Udemy",
     image: "/certification/udemy.png", // Update with your image path
-    credentialUrl: "", // Add credential link
+    credentialUrl: "https://www.linkedin.com/in/soham-ovhal-pccoe/details/certifications/", // Add credential link
   },
   {
     name: "Aspire Leadership Program",
     issuer: "Founded at Harvard University - Aspire Institute",
     image: "/certification/aspire.png", // Update with your image path
-    credentialUrl: "", // Add credential link
+    credentialUrl: "https://www.linkedin.com/in/soham-ovhal-pccoe/details/certifications/", // Add credential link
   },
   {
     name: "Introduction to C++ and Unreal Engine",
