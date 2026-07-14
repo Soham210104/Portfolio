@@ -36,52 +36,45 @@ export const AboutSection = () => {
             </div>
           </div>
 
-          <div className="grid grid-cols-1 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             <div className="gradient-border p-6 card-hover">
               <div className="flex items-start gap-4">
-                <div className="p-3 rounded-full bg-primary/10">
+                <div className="p-3 rounded-full bg-primary/10 flex-shrink-0">
                   <Code className="h-6 w-6 text-primary" />
                 </div>
-                <div className="gradient-border p-6 card-hover">
-                  <div className="flex items-start gap-4">
-                    <div className="p-3 rounded-full bg-primary/10">
-                      <Code className="h-6 w-6 text-primary" />
-                    </div>
-                    <div className="text-left">
-                      <h4 className="font-semibold text-lg">Full-Stack Development</h4>
-                      <p className="text-muted-foreground">
-                        Designing and delivering scalable, high-performance web applications using Java, Spring Boot, React, Node.js, REST APIs, and modern database technologies.
-                      </p>
-                    </div>
-                  </div>
+                <div className="text-left">
+                  <h4 className="font-semibold text-lg">Full-Stack Development</h4>
+                  <p className="text-muted-foreground text-sm">
+                    Scalable web applications with Java, Spring Boot, React, and Node.js.
+                  </p>
                 </div>
+              </div>
+            </div>
 
-                <div className="gradient-border p-6 card-hover">
-                  <div className="flex items-start gap-4">
-                    <div className="p-3 rounded-full bg-primary/10">
-                      <Gamepad className="h-6 w-6 text-primary" />
-                    </div>
-                    <div className="text-left">
-                      <h4 className="font-semibold text-lg">Software Development</h4>
-                      <p className="text-muted-foreground">
-                        Developing reliable, maintainable, and efficient software solutions by applying clean architecture, object-oriented principles, and industry best practices.
-                      </p>
-                    </div>
-                  </div>
+            <div className="gradient-border p-6 card-hover">
+              <div className="flex items-start gap-4">
+                <div className="p-3 rounded-full bg-primary/10 flex-shrink-0">
+                  <Gamepad className="h-6 w-6 text-primary" />
                 </div>
+                <div className="text-left">
+                  <h4 className="font-semibold text-lg">Software Development</h4>
+                  <p className="text-muted-foreground text-sm">
+                    Clean architecture and OOP principles for maintainable solutions.
+                  </p>
+                </div>
+              </div>
+            </div>
 
-                <div className="gradient-border p-6 card-hover">
-                  <div className="flex items-start gap-4">
-                    <div className="p-3 rounded-full bg-primary/10">
-                      <Server className="h-6 w-6 text-primary" />
-                    </div>
-                    <div className="text-left">   
-                      <h4 className="font-semibold text-lg">Backend Engineering</h4>
-                      <p className="text-muted-foreground">
-                        Engineering secure and scalable backend systems, RESTful APIs, authentication, database solutions, and cloud-ready services for modern applications.
-                      </p>
-                    </div>
-                  </div>
+            <div className="gradient-border p-6 card-hover">
+              <div className="flex items-start gap-4">
+                <div className="p-3 rounded-full bg-primary/10 flex-shrink-0">
+                  <Server className="h-6 w-6 text-primary" />
+                </div>
+                <div className="text-left">   
+                  <h4 className="font-semibold text-lg">Backend Engineering</h4>
+                  <p className="text-muted-foreground text-sm">
+                    Secure APIs, authentication, databases, and cloud-ready services.
+                  </p>
                 </div>
               </div>
             </div>
