@@ -8,6 +8,7 @@ import { ProjectsSection } from "../Components/ProjectsSection";
 import { ContactSection } from "../Components/ContactSection";
 import { Footer } from "../Components/Footer";
 import { WorkExperienceSection } from "../Components/WorkExperienceSection";
+import { CertificationSection } from "../Components/CertificationSection";
 export const Home = () => {
   return <div className="min-h-screen ">
     
@@ -23,6 +24,7 @@ export const Home = () => {
       <AboutSection />
       <WorkExperienceSection />
       <SkillSection />
+      <CertificationSection />
       <ProjectsSection />
       <ContactSection />
     </main>
