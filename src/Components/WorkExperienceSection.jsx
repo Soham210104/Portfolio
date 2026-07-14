@@ -12,6 +12,9 @@ const workExperiences = [
         <li>Built hands-on projects implementing RESTful APIs, CRUD operations, and dynamic, responsive user interfaces.</li>
         <li>Developed backend services using Node.js and Express.js, integrating MongoDB for efficient data management.</li>
         <li>Acquired practical knowledge of SDLC, Git-based version control, debugging, and Agile methodologies.</li>
+        <li>Worked on Java and Spring Boot application development with a focus on backend services and REST APIs.</li>
+        <li>Implemented database operations using SQL and applied OOP principles to develop maintainable code.</li>
+        <li>Utilized Git, Agile methodologies, and SDLC practices for software development and collaboration.</li>
       </ul>
     )
   },

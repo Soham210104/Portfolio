@@ -3,36 +3,50 @@ import { cn } from "@/lib/utils";
 
 const skills = [
   // Programming Languages
-  { name: "C++", level: 95, category: "programming" },
-  { name: "C#", level: 80, category: "programming" },
-  { name: "Java", level: 60, category: "programming" },
-  { name: "Python", level: 50, category: "programming" },
+  { name: "Java", level: 85, category: "programming" },
+  { name: "C++", level: 80, category: "programming" },
+  { name: "C#", level: 75, category: "programming" },
+  { name: "Python", level: 70, category: "programming" },
   { name: "JavaScript", level: 80, category: "programming" },
-  { name: "SQL", level: 70, category: "programming" },
+  { name: "SQL", level: 85, category: "programming" },
 
   // Frontend
-  { name: "HTML/CSS", level: 95, category: "frontend" },
-  { name: "React", level: 80, category: "frontend" },
-  { name: "Tailwind CSS", level: 60, category: "frontend" },
+  { name: "React.js", level: 80, category: "frontend" },
+  { name: "HTML5", level: 90, category: "frontend" },
+  { name: "Tailwind CSS", level: 80, category: "frontend" },
 
   // Backend
-  { name: "Node.js", level: 40, category: "backend" },
+  { name: "Spring Boot", level: 80, category: "backend" },
+  { name: "Node.js", level: 75, category: "backend" },
+  { name: "Express.js", level: 75, category: "backend" },
+  { name: "REST APIs", level: 85, category: "backend" },
+  { name: "MongoDB", level: 80, category: "backend" },
+  { name: "MySQL", level: 80, category: "backend" },
 
   // Tools
-  { name: "Git/GitHub", level: 95, category: "tools" },
+  { name: "Git & GitHub", level: 90, category: "tools" },
+  { name: "Postman", level: 85, category: "tools" },
   { name: "VS Code", level: 95, category: "tools" },
-  { name: "Unity", level: 100, category: "tools" },
+  { name: "AWS", level: 65, category: "tools" },
 
-  //Concepts
-  { name: "Data Structures", level: 95, category: "concepts" },
-  { name: "Algorithms", level: 95, category: "concepts" },
-  { name: "Object-Oriented Programming", level: 100, category: "concepts" },
-  { name: "Agile Methodologies", level: 50, category: "concepts" },
-  { name: "RESTful APIs", level: 50, category: "concepts" },
-  { name: "Software Development Life Cycle (SDLC)", level: 70, category: "concepts" },
+  // Concepts
+  { name: "Data Structures & Algorithms", level: 85, category: "concepts" },
+  { name: "Object-Oriented Programming", level: 90, category: "concepts" },
+  { name: "Microservices", level: 70, category: "concepts" },
+  { name: "Agile Methodologies", level: 80, category: "concepts" },
+  { name: "Software Development Life Cycle", level: 80, category: "concepts" },
+  { name: "Prompt Engineering", level: 85, category: "concepts" },
+  { name: "Agentic AI", level: 80, category: "concepts" },
 ];
 
-const categories = ["all", "programming", "frontend", "backend", "tools", "concepts"];
+const categories = [
+  "all",
+  "programming",
+  "frontend",
+  "backend",
+  "tools",
+  "concepts",
+];
 
 export const SkillSection = () => {
   const [activeCategory, setActiveCategory] = useState("all");
