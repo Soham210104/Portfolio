@@ -36,14 +36,14 @@ export const AboutSection = () => {
             </div>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 gap-4">
             <div className="gradient-border p-6 card-hover">
               <div className="flex items-start gap-4">
                 <div className="p-3 rounded-full bg-primary/10 flex-shrink-0">
                   <Code className="h-6 w-6 text-primary" />
                 </div>
                 <div className="text-left">
-                  <h4 className="font-semibold text-lg">Full-Stack Development</h4>
+                  <h4 className="font-semibold">Full-Stack Development</h4>
                   <p className="text-muted-foreground text-sm">
                     Scalable web applications with Java, Spring Boot, React, and Node.js.
                   </p>
@@ -57,7 +57,7 @@ export const AboutSection = () => {
                   <Gamepad className="h-6 w-6 text-primary" />
                 </div>
                 <div className="text-left">
-                  <h4 className="font-semibold text-lg">Software Development</h4>
+                  <h4 className="font-semibold">Software Development</h4>
                   <p className="text-muted-foreground text-sm">
                     Clean architecture and OOP principles for maintainable solutions.
                   </p>
@@ -71,7 +71,7 @@ export const AboutSection = () => {
                   <Server className="h-6 w-6 text-primary" />
                 </div>
                 <div className="text-left">   
-                  <h4 className="font-semibold text-lg">Backend Engineering</h4>
+                  <h4 className="font-semibold">Backend Engineering</h4>
                   <p className="text-muted-foreground text-sm">
                     Secure APIs, authentication, databases, and cloud-ready services.
                   </p>
